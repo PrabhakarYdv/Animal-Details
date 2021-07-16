@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/animal_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/card_bg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/cow" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/picture"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Type : Pet"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/picture"
+            android:layout_marginHorizontal="7dp"
+            android:layout_toRightOf="@id/type"
+            android:fontFamily="@font/adamina"
+            android:text="Sound : bowww."
+            android:textColor="#FFFFFF"
+            android:textSize="8dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
